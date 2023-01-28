@@ -1,0 +1,96 @@
+<div class="container">
+    <!---->
+    <div #Terra>
+        <h3>Team Terra</h3>
+        <span>Tutti book, tranne quarto team con calice.</span>
+        <a href="https://cdn.discordapp.com/attachments/952098414382952520/1026730819261304884/132CAA78-6C74-4954-905E-A493BDED2EAA.png">Link</a>
+        <!--TEAM-->
+        <div *ngFor="let team of EarthTeams" class="flex mt-15">
+            <div *ngFor="let hero of team.heroes" class="img-container">
+                <hero-img [Hero]="hero.name"></hero-img>
+                <weapon-img [Weapon]="hero.weapon"></weapon-img>
+            </div>
+        </div>
+    </div>
+    <!---->
+    <div #Acqua class="mt-15">
+        <h3>Team Acqua</h3>
+        <span>Tutti calice, tranne quarto team con book.</span>
+        <a href="https://cdn.discordapp.com/attachments/952098414382952520/1026730819601047584/2C0B8404-5A48-4254-BC48-B833AC0A16A7.png">Link</a>
+        <!--TEAM-->
+        <div *ngFor="let team of WaterTeams" class="flex mt-15">
+            <div *ngFor="let hero of team.heroes" class="img-container">
+                <hero-img [Hero]="hero.name"></hero-img>
+                <weapon-img [Weapon]="hero.weapon"></weapon-img>
+            </div>
+        </div>
+    </div>
+    <!---->
+    <div #Fuoco class="mt-15">
+        <h3>Team Fuoco</h3>
+        <span>Tutti calice.</span>
+        <a href="https://cdn.discordapp.com/attachments/952098414382952520/1026730819856912444/31B9F4B2-1088-4A88-894E-E194393D5EBE.png">Link</a>
+        <!--TEAM-->
+        <div *ngFor="let team of FireTeams" class="flex mt-15">
+            <div *ngFor="let hero of team.heroes" class="img-container">
+                <hero-img [Hero]="hero.name"></hero-img>
+                <weapon-img [Weapon]="hero.weapon"></weapon-img>
+            </div>
+        </div>
+    </div>
+    <!---->
+    <div #Luce class="mt-15">
+        <h3>Team Luce</h3>
+        <span>Tutti book.</span>
+        <a href="https://cdn.discordapp.com/attachments/952098414382952520/1026730820154699838/3423261E-D7B5-497F-9DD5-C760B236E457.png">Link</a>
+        <!--TEAM-->
+        <div *ngFor="let team of LightTeams" class="flex mt-15">
+            <div *ngFor="let hero of team.heroes" class="img-container">
+                <hero-img [Hero]="hero.name"></hero-img>
+                <weapon-img [Weapon]="hero.weapon"></weapon-img>
+            </div>
+        </div>
+    </div>
+    <!---->
+    <div #Oscuro class="mt-15">
+        <h3>Team Oscurita</h3>
+        <span>Tutti calice.</span>
+        <a href="https://cdn.discordapp.com/attachments/952098414382952520/1026730820603494411/98798C80-C50F-4D1C-B99B-699787CD5BEE.png">Link</a>
+        <!--TEAM-->
+        <div *ngFor="let team of DarkTeams" class="flex mt-15">
+            <div *ngFor="let hero of team.heroes" class="img-container">
+                <hero-img [Hero]="hero.name"></hero-img>
+                <weapon-img [Weapon]="hero.weapon"></weapon-img>
+            </div>
+        </div>
+    </div>
+    <!---->
+    <div #Base class="mt-15">
+        <h3>Team Base</h3>
+        <span>Tutti calice.</span>
+        <a href="https://cdn.discordapp.com/attachments/952098414382952520/1026730820993548338/5BBB4B62-54EF-4F1B-9531-C8EFC4987611.png">Link</a>
+        <!--TEAM-->
+        <div *ngFor="let team of BasicTeams" class="flex mt-15">
+            <div *ngFor="let hero of team.heroes" class="img-container">
+                <hero-img [Hero]="hero.name"></hero-img>
+                <weapon-img [Weapon]="hero.weapon"></weapon-img>
+            </div>
+        </div>
+    </div>
+    <!---->
+    <div #Other class="mt-15">
+        <h3>Altre risorse</h3>
+        <div>
+            <span>Raid fillers + debuffs: </span>
+            <a href="https://cdn.discordapp.com/attachments/952098414382952520/1063085949229219910/Guardian.png">Link</a>
+        </div>
+        <div>
+            <span>Stamp timers: </span>
+            <a href="https://cdn.discordapp.com/attachments/919930128350449695/1037498804049547354/unknown.png">Link</a>
+        </div>
+        <div>
+            <span>Guild raid guide pdf: </span>
+            <a href="https://drive.google.com/drive/folders/1hQaUIMaA0o5BZvf--eSKfr7M1b7xMjSD">Link</a>
+        </div>
+    </div>
+</div>

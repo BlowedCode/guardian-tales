@@ -1,0 +1,9 @@
+<div style="height: 100vh; overflow: hidden;">
+    <div class="app-navbar">
+        <div style="cursor: pointer; margin: 0px 15px;" [routerLink]="['/home']">Home</div>
+        <div style="cursor: pointer; margin: 0px 15px;" [routerLink]="['/raids/team']">Raid</div>
+    </div>
+    <div style="height: calc(100vh - 52px); overflow: auto;">
+        <router-outlet></router-outlet>
+    </div>
+</div>
